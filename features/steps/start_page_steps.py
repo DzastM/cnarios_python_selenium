@@ -1,4 +1,5 @@
 from behave import given, when, then
+from pages.challenges_page import ChallengesPage
 from pages.start_page import StartPage
 
 @given("I am on the product purchasing page")
