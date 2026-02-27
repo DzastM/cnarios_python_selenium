@@ -1,6 +1,6 @@
 import pytest
 from base.base_test import BaseTest
-from pages.example_page import ExamplePage
+from pages.challenges_page import ExamplePage
 
 
 class TestExample(BaseTest):

@@ -15,15 +15,6 @@ class ExamplePage(BasePage):
         """Initialize ExamplePage."""
         super().__init__(driver)
     
-    def get_heading(self) -> str:
-        """
-        Get the page heading.
-        
-        Returns:
-            Heading text
-        """
-        return self.get_text(self.HEADING)
-    
     def search(self, query: str):
         """
         Perform a search.

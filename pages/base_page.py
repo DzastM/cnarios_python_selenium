@@ -28,6 +28,14 @@ class BasePage:
         url = url or Config.BASE_URL
         self.driver.get(url)
     
+    def get_heading(self) -> str:
+        return self.get_text(self.HEADING)
+    
+    def assert_heading(self, expected_heading: str):
+        actual_heading = self.get_heading()
+        assert actual_heading == expected_heading, f"Expected heading '{expected_heading}', but got '{actual_heading}'"
+    
+
     def find_element(self, locator: tuple):
         """
         Find a single element.
